@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Chart Component - by NathLowe</title>
+    <meta name="description" content="Hello there, I am Nathan Lowe, a Frontend Web Developer specialized in React/NextJS. This application is an Expenses Chart component which design I have taken from Frontend Mentor.">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section id="top-card">
+                <div>
+                    <h1>My Balance</h1>
+                    <span class="amount">$921.48</span>
+                </div>
+                <div>
+                    <img src="./assets/images/logo.svg" alt="2 Circles">
+                </div>
+            </section>
+            <section id="main-card">
+                <h2>Spending - Last 7 days</h2>
+                <div class="chart">
+                    <!-- Monday -->
+                    <div class="day">
+                        <div class="bar-container">
+                            <div class="hide bar mon">
+                                <div class="value">$10.0</div>
+                            </div>
+                        </div>
+                        <span>mon</span>
+                    </div>
+                    <!-- Tuesday -->
+                    <div class="day">
+                        <div class="bar-container">
+                            <div class="hide bar tue">
+                                <div class="value">$10.0</div>
+                            </div>
+                        </div>
+                        <span>tue</span>
+                    </div>
+                    <!-- Wednesday -->
+                    <div class="day">
+                        <div class="bar-container">
+                            <div class="hide bar wed">
+                                <div class="value">$10.0</div>
+                            </div>
+                        </div>
+                        <span>wed</span>
+                    </div>
+                    <!-- Thursday -->
+                    <div class="day">
+                        <div class="bar-container">
+                            <div class="hide bar thu">
+                                <div class="value">$10.0</div>
+                            </div>
+                        </div>
+                        <span>thu</span>
+                    </div>
+                    <!-- Friday -->
+                    <div class="day">
+                        <div class="bar-container">
+                            <div class="hide bar fri">
+                                <div class="value">$10.0</div>
+                            </div>
+                        </div>
+                        <span>fri</span>
+                    </div>
+                    <!-- Saturday -->
+                    <div class="day">
+                        <div class="bar-container">
+                            <div class="hide bar sat">
+                                <div class="value">$10.0</div>
+                            </div>
+                        </div>
+                        <span>sat</span>
+                    </div>
+                    <!-- Sunday -->
+                    <div class="day">
+                        <div class="bar-container">
+                            <div class="hide bar sun">
+                                <div class="value">$10.0</div>
+                            </div>
+                        </div>
+                        <span>sun</span>
+                    </div>
+                </div>
+                <div class="summary" >
+                    <div>
+                        <span class="title">Total this month</span>
+                        <span class="total">$478.33</span>
+                    </div>
+                    <div>
+                        <span class="growth">+2.4%</span>
+                        <span class="period">from last month</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
