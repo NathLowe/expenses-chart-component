@@ -1,15 +1,16 @@
 let getMaxAmount = (data) => {
     let max = 0
     let max_day = ''
-    for(let i = 0; i < data.length; i++){
-        if(data[i].amount > max){
-            max = data[i].amount
-            max_day = data[i].day
+    for(const element of data){
+        if(element.amount > max){
+            max = element.amount
+            max_day = element.day
         }
     }
     return [max, max_day]
 }
 
+// To set the height of each bar and to determine which bar should be blue
 let createGraph = (data) => {
     let bars = document.querySelectorAll('.chart .day .bar')
     let max = getMaxAmount(data)[0]
